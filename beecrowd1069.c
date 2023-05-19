@@ -33,8 +33,10 @@ int main() {
 
 do
 {
-    if (teste == 0) 
-        return 1;
+    if (teste == 0){
+        printf("Digite um valor maior que 0!\n\n");
+        return main();
+        }
     else{
         for (int i = 0; i < tamanho; i++) {
             int indice = rand() % 3; 
